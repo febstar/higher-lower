@@ -20,10 +20,9 @@ Dict = {}
 for i in range(len(ALL_N)):
     Dict[i] = ALL_N[i]
 
-print(Dict)
 
 NUM = random.randint(0, 9)
-print(NUM)
+
 
 
 def make_bold(function):
