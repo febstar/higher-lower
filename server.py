@@ -21,6 +21,7 @@ for i in range(len(ALL_N)):
     Dict[i] = ALL_N[i]
 
 print(Dict)
+
 NUM = random.randint(0, 9)
 print(NUM)
 
@@ -43,14 +44,16 @@ def answer(num):
     if num == NUM:
         num = NUM
         q = Dict[num]
-        return "Correct" \
+        return "<h1>Correct</h1>" \
                f"<img src={q}>" \
-               f"<img src={CORRECT}>"
+               f"<img src={CORRECT}>" \
+               f"<a href='/'>Home</a>"
     else:
         q = Dict[num]
-        return "Incorrect" \
+        return "<h1>Incorrect</h1>" \
                f"<img src={q}>" \
-               f"<img src={WRONG}>"
+               f"<img src={WRONG}>" \
+               f"<a href='/{NUM}'>Check Answer</a>"
 
 
 if __name__ == "__main__":
