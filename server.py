@@ -46,7 +46,7 @@ def answer(num):
         return "<h1>Correct</h1>" \
                f"<img src={q}>" \
                f"<img src={CORRECT}>" \
-               f"<a href='/'>Home</a>"
+               "<a href='/'>Home</a>"
     else:
         q = Dict[num]
         return "<h1>Incorrect</h1>" \
