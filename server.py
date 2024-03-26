@@ -1,5 +1,5 @@
 from flask import Flask
-import random
+import secrets
 
 app = Flask(__name__)
 N_0 = 'https://media.giphy.com/media/mc6HkypwhX0pMdRBuT/giphy.gif'
@@ -21,7 +21,7 @@ for i in range(len(ALL_N)):
     Dict[i] = ALL_N[i]
 
 
-NUM = random.randint(0, 9)
+NUM = secrets.SystemRandom().randint(0, 9)
 
 
 
